@@ -7,7 +7,7 @@ namespace Converter.Units
     [Unit(nameof(TemperatureUnit))]
     abstract class TemperatureUnit : Unit
     {
-        protected abstract double HowManyInCelsium { get; }
-        public override double GetRation => HowManyInCelsium;
+        protected abstract double UnitDevidedByCelsium { get; }
+        public override double GetRation => UnitDevidedByCelsium;
     }
 }

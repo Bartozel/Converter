@@ -7,8 +7,8 @@ namespace Converter.Units
     [Unit(nameof(LenghtUnit))]
     abstract class LenghtUnit : Unit
     {
-        protected abstract double HowManyInMeter { get; }
+        protected abstract double UnitDevidedByMeter { get; }
         public override double GetShift => 0;
-        public override double GetRation => HowManyInMeter;
+        public override double GetRation => UnitDevidedByMeter;
     }
 }

@@ -16,7 +16,9 @@ using System.Windows.Shapes;
 namespace Converter
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// This program converts lenght, data and temperature units.
+    /// Works with SI prefixes. 
+    /// As input and output have to be used same names as are used in folder Units.
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -34,8 +36,9 @@ namespace Converter
 
             try
             {
-                var result = await Task.Run(() => { return ConvertManager.Convert(input, output); });
-                tblConvertedOutpt.Text += result + Environment.NewLine;
+                var result = await Task.Run(() => { return ConvertCounterManager.GetConvertionResult(input, output); });
+
+                tblConvertedOutpt.Text = result + Environment.NewLine + tblConvertedOutpt.Text;
             }
             catch (Exception ex)
             {

@@ -7,7 +7,7 @@ namespace Converter.Units
     [Unit(nameof(LenghtUnit))]
     class Inches : LenghtUnit
     {
-        protected override double HowManyInMeter => 0.0254;
+        protected override double UnitDevidedByMeter => 0.0254;
 
         public override string ToString()
         {

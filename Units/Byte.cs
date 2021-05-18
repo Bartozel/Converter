@@ -6,7 +6,7 @@ namespace Converter.Units
 {
     class Byte : DataUnit
     {
-        protected override double HowManyInByte => 1;
+        protected override double UnitDevidedByByte => 1;
 
         public override string ToString()
         {

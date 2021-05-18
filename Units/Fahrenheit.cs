@@ -8,7 +8,7 @@ namespace Converter.Units
     {
         public override double GetShift => -32;
 
-        protected override double HowManyInCelsium => 0.55555555;
+        protected override double UnitDevidedByCelsium => 0.55555555;
 
         public override string ToString()
         {

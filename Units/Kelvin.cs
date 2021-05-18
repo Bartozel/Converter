@@ -8,7 +8,7 @@ namespace Converter.Units
     class Kelvin : TemperatureUnit
     {
         public override double GetShift => 273.15;
-        protected override double HowManyInCelsium => 1;
+        protected override double UnitDevidedByCelsium => 1;
 
         public override string ToString()
         {
